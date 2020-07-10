@@ -16,7 +16,6 @@ footer {
 	color: white;
 	line-height: 50px;
 	padding-left: 20px;
-	
 }
 /*navbar*/
 .navbar {
@@ -29,20 +28,19 @@ footer {
 	padding-right: 0px;
 	min-width: 320px;
 }
-.navbarInner{
+.navbarInner {
 	height: fit-content;
 }
 
-.navbarTitle{
+.navbarTitle {
 	display: inline-flex;
 }
-.navbarInteractables{
+.navbarInteractables {
 	display: inline-flex;
 	float: right;
-
 }
 /*navbar list*/
-ul{
+ul {
 	list-style-type: none;
 	margin: 0;
 	padding-left: 0%;
@@ -65,7 +63,7 @@ li s {
 	color: gold;
 	text-decoration: none;
 }
-#interactable:hover{
+#interactable:hover {
 	background-color: #111;
 }
 
@@ -81,12 +79,14 @@ li s {
 @media screen and (min-width: 776px) {
 	.panes {
 		display: inline-flex;
+		margin-left: 25px;
+		margin-right: 25px;
 	}
-	.navbar{
+	.navbar {
 		line-height: 100%;
-}
+	}
 
-	li{
+	li {
 		padding: 21.5px 24px;
 	}
 }
@@ -94,17 +94,24 @@ li s {
 @media screen and (max-width: 775px) {
 	.panes {
 		display: inline-block;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 
-	p{font-size: 14px;}
-	.colRight{width: 200px;}
-	.colLeft{width: 200px;}
-	.navbar{
+	p {
+		font-size: 14px;
+	}
+	.colRight {
+		width: 200px;
+	}
+	.colLeft {
+		width: 200px;
+	}
+	.navbar {
 		line-height: 50%;
 		font-size: 14px;
-
 	}
-	li{
+	li {
 		padding: 19px 12px;
 	}
 }
@@ -119,11 +126,7 @@ li s {
 
 .panes {
 	float: 0;
-
 	line-height: 20px;
-
-	margin-left: 25px;
-	margin-right: 25px;
 }
 
 .banner {
@@ -131,7 +134,6 @@ li s {
 	margin-bottom: 2%;
 	margin-left: 2.5%;
 	margin-right: 2.5%;
-
 }
 .bannerPic {
 	background-image: url("https://www.blog.print-print.co.uk/wp-content/uploads/2017/07/promote-coffee-shop.jpg");
@@ -145,6 +147,4 @@ li s {
 	padding-top: 5px;
 	padding-left: 20px;
 	height: 250px;
-
-
 }
