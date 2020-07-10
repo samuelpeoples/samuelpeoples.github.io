@@ -68,13 +68,13 @@ li a:hover {
 .content {
 	padding: 20px;
 	min-height: 100%;
-	margin: 0 auto -50px;
+
 
 	text-align: center;
 	position: relative;
 	margin-top: 50px;
 }
-@viewport{
+@-ms-viewport{
 	zoom: 1.0;
     width: device-width;
 }
