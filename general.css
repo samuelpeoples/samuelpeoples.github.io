@@ -2,6 +2,7 @@ html,
 body {
 	height: 100%;
 	margin: 0;
+	padding: 0%;
 	background-color: dimgrey;
 	color: gold;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -15,14 +16,14 @@ footer {
 	color: white;
 	line-height: 50px;
 	padding: 0 20px;
+	
 }
 .navbar {
-	background-color: grey;
+	background-color: rgb(56, 54, 51);
 	position: sticky;
 	top: 0px;
 	border-bottom: 6px solid;
-	line-height: 14px;
-	z-index: 1;
+	line-height: 90%;
 }
 
 .navbarContent {
@@ -86,6 +87,14 @@ li a:hover {
 	}
 }
 
+@media screen and (max-width: 481px) {
+	.panes {
+		display: inline-block;
+	}
+	body{
+	color: black;
+	}
+}
 .colLeft {
 	padding-right: 50px;
 	width: 300px;
@@ -105,8 +114,11 @@ li a:hover {
 }
 
 .banner {
-	background-color: rgb(56, 54, 51);
-	border-bottom: 6px solid;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+
 }
 .bannerPic {
 	background-image: url("https://www.blog.print-print.co.uk/wp-content/uploads/2017/07/promote-coffee-shop.jpg");
@@ -116,10 +128,9 @@ li a:hover {
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	height: 250px;
-}
-.bannerContent {
-	text-align: left;
 	padding-top: 5px;
 	padding-left: 20px;
+	height: 250px;
+
+
 }
