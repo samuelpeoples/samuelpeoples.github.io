@@ -95,6 +95,10 @@ li s {
 	.panes {
 		display: inline-block;
 	}
+
+	p{font-size: 14px;}
+	.colRight{width: 200px;}
+	.colLeft{width: 200px;}
 	.navbar{
 		line-height: 50%;
 		font-size: 14px;
@@ -118,8 +122,8 @@ li s {
 
 	line-height: 20px;
 
-	margin-left: 50px;
-	margin-right: 50px;
+	margin-left: 25px;
+	margin-right: 25px;
 }
 
 .banner {
