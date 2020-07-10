@@ -74,6 +74,10 @@ li a:hover {
 	position: relative;
 	margin-top: 50px;
 }
+@viewport{
+	zoom: 1.0;
+    width: device-width;
+}
 
 @media screen and (min-width: 776px) {
 	.panes {
@@ -85,23 +89,17 @@ li a:hover {
 	.panes {
 		display: inline-block;
 	}
-}
-
-@media screen and (max-width: 481px) {
-	.panes {
-		display: inline-block;
-	}
 	body{
 	color: black;
 	}
 }
 .colLeft {
 	padding-right: 50px;
-	width: 300px;
+	width: 280px;
 }
 
 .colRight {
-	width: 300px;
+	width: 280px;
 }
 
 .panes {
