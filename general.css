@@ -24,12 +24,13 @@ footer {
 	position: sticky;
 	top: 0px;
 	border-bottom: 6px solid;
-	line-height: 100%;
-	
 	align-items: center;
 	padding-left: 25px;
 	padding-right: 0px;
-	
+	min-width: 320px;
+}
+.navbarInner{
+	height: fit-content;
 }
 
 .navbarTitle{
@@ -72,7 +73,6 @@ li s {
 	padding: 20px;
 	min-height: 100%;
 	margin: 0 auto -50px;
-
 	text-align: center;
 	position: relative;
 	margin-top: 50px;
@@ -86,8 +86,12 @@ li s {
 	.panes {
 		display: inline-flex;
 	}
-		.navbarContent{
+	.navbar{
 		line-height: 100%;
+}
+
+	li{
+		padding: 21.5px 24px;
 	}
 }
 
@@ -96,11 +100,12 @@ li s {
 		display: inline-block;
 	}
 	.navbar{
-			line-height: 10%;
-	}
+		line-height: 50%;
+		font-size: 14px;
 
-	body{
-	color: black;
+}
+	li{
+		padding: 19px 12px;
 	}
 }
 .colLeft {
