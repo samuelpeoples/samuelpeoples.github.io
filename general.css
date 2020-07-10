@@ -15,7 +15,7 @@ footer {
 	background: rgb(74, 164, 194);
 	color: white;
 	line-height: 50px;
-	padding: 0 20px;
+	padding-left: 20px;
 	
 }
 /*navbar*/
@@ -77,10 +77,6 @@ li s {
 	position: relative;
 	margin-top: 50px;
 }
-@-ms-viewport{
-	zoom: 1.0;
-    width: device-width;
-}
 
 @media screen and (min-width: 776px) {
 	.panes {
@@ -103,7 +99,7 @@ li s {
 		line-height: 50%;
 		font-size: 14px;
 
-}
+	}
 	li{
 		padding: 19px 12px;
 	}
