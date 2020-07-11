@@ -3,7 +3,7 @@ body {
 	height: 100%;
 	margin: 0;
 	padding: 0%;
-	background-color: dimgrey;
+	background-color: rgb(59, 59, 59);
 	color: gold;
 	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
 		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -19,12 +19,11 @@ footer {
 }
 /*navbar*/
 .navbar {
-	background-color: rgb(56, 54, 51);
+	background-color: rgb(48, 45, 42);
 	position: sticky;
 	top: 0px;
 	border-bottom: 6px solid;
 	align-items: center;
-	padding-left: 25px;
 	padding-right: 0px;
 	min-width: 320px;
 }
@@ -39,20 +38,19 @@ footer {
 	display: inline-flex;
 	float: right;
 }
+.navbarItems{
+	border-right: 2px solid gold;
+}
 /*navbar list*/
 ul {
 	list-style-type: none;
 	margin: 0;
 	padding-left: 0%;
-	overflow: hidden;
-	float: left;
+	overflow: hidden
 	display: block;
 }
-li {
-	border-right: 2px solid gold;
-	padding: 21.5px 24px;
-}
-li:last-child {
+
+.navbarItems:last-child {
 	border-right: none;
 }
 li a {
@@ -73,78 +71,116 @@ li s {
 	margin: 0 auto -50px;
 	text-align: center;
 	position: relative;
-	margin-top: 50px;
-}
-
-@media screen and (min-width: 776px) {
-	.panes {
-		display: inline-flex;
-		margin-left: 25px;
-		margin-right: 25px;
-	}
-	.navbar {
-		line-height: 100%;
-	}
-
-	li {
-		padding: 21.5px 24px;
-	}
-}
-
-@media screen and (max-width: 775px) {
-	.panes {
-		display: inline-block;
-		margin-left: 5px;
-		margin-right: 5px;
-	}
-
-	p {
-		font-size: 14px;
-	}
-	.colRight {
-		width: 200px;
-	}
-	.colLeft {
-		width: 200px;
-	}
-	.navbar {
-		line-height: 50%;
-		font-size: 14px;
-	}
-	li {
-		padding: 19px 12px;
-	}
-}
-.colLeft {
-	padding-right: 50px;
-	width: 280px;
-}
-
-.colRight {
-	width: 280px;
-}
-
-.panes {
-	float: 0;
+	margin-top: 25px;
 	line-height: 20px;
 }
 
-.banner {
-	margin-top: 2%;
-	margin-bottom: 2%;
-	margin-left: 2.5%;
-	margin-right: 2.5%;
+/*desktop version*/
+@media screen and (min-width: 776px) {
+	.content{
+		display: block;
+	}
+	.panesOuter {
+		display: inline-flex;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.navbar {
+		line-height: 100%;
+		padding-left: 25px;
+	}
+	.pane{
+		max-width: 240px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	#colRight{
+		margin-left: 20px;
+
+	}
+	#colLeft{
+		margin-right: 20px;
+	}
+
+	.navbarItems {
+		padding: 21.5px 24px;
+	}
+	.banner{
+		margin-top: 10px;
+		margin-bottom: 8px;
+		margin-left: 10px;
+		margin-right: 8px;
+
+	}
+	.bannerPic{
+		background-position: 90% 45%;
+		height: 250px;
+	}
+	.bannerContent{
+		padding-top: 2px;
+		padding-left: 16px;
+		padding-bottom: 12px;
+		padding-right: 16px;
+	}
 }
+/*mobile version*/
+@media screen and (max-width: 775px) {
+	.content{
+		display: flex;
+	}
+	.panesOuter { 
+		text-align: left;
+		margin-left: 5px;
+		margin-right: 5px;		
+	}
+	p {
+		font-size: 14px;
+	}
+	.pane {
+		max-width: 280px;
+		margin-bottom: 50px;
+	
+	}
+	.navbar {
+		line-height: 40%;
+		font-size: 14px;
+		padding-left: 10px;	
+	}
+	.navbarItems {
+		padding: 19px 9px;
+	}
+	.banner{
+		border-bottom: 6px solid gold;
+	}
+	.bannerPic{
+		background-position: 20% 50%;
+		height: 150px;
+	
+	}
+	.bannerContent{
+		padding-top: 16px;
+		padding-left: 16px;
+		padding-bottom: 21px;
+		padding-right: 16px;
+	}
+}
+#openingHours{
+		text-align: right;
+		margin-left: 5px;
+		margin-right: 5px;
+}
+
+.pane{
+	min-width: 280px;
+}
+
 .bannerPic {
 	background-image: url("https://www.blog.print-print.co.uk/wp-content/uploads/2017/07/promote-coffee-shop.jpg");
 	background-repeat: no-repeat;
-	background-position: 90% 45%;
 	background-size: 120%;
-	max-width: 1000px;
-	min-width: 300px;
 	margin-left: auto;
 	margin-right: auto;
-	padding-top: 5px;
-	padding-left: 20px;
-	height: 250px;
+	max-width: 1000px;
+	min-width: 300px;	
 }
+
