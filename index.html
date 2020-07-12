@@ -2,26 +2,27 @@
 
 <html>
 	<head>
+		
 		<meta name="viewport" content="initial-scale=1" />
 		<link href="general.css" rel="stylesheet" />
 		<title>Walters Coffee</title>
 	</head>
 
 	<body>
-		<header>
-			<div class="navbar">
-				<div class="navbarInner">
-					<h1 class="navbarTitle">
-						Walters
-					</h1>
+		<div class="navbar">
+			<div class="navbarInner">
+				<h1 class="navbarTitle">
+					Walters
+				</h1>
 
-					<ul class="navbarInteractables">
-						<li class="navbarItems"><s>Home</s></li>
-						<li class="navbarItems"id="interactable"><a href="menuPage.html">Menu</a></li>
-						<li class="navbarItems"id="interactable"><a href="contactPage.html">Contact Us</a></li>
-					</ul>
-				</div>
+				<ul class="navbarInteractables">
+					<li class="navbarItems"><s>Home</s></li>
+					<li class="navbarItems"id="interactable"><a href="menuPage.html">Menu</a></li>
+					<li class="navbarItems"id="interactable"><a href="contactPage.html">Contact Us</a></li>
+				</ul>
 			</div>
+		</div>
+		<header>
 			<header class="banner">
 				<header class="bannerPic">
 					<div class="bannerContent">
@@ -35,8 +36,25 @@
 		</header>
 
 		<div class="content">
-			<div class="panesOuter">
-				<div class="pane" id="colLeft">
+			<div class="e" id="openingHours">
+				<h1>Opening Hours</h1>
+				<table style="width: 100%; text-align: left;">
+					<tr>
+						<th>Monday - Wednesday</th> <td>8am-5pm</td> 
+					</tr>
+					<tr>
+						<th>Thursday - Friday</th> <td>10am-5pm</td> 
+					</tr>
+					<tr>
+						<th>Saturday</th> <td>7am-3pm</td> 
+					</tr>
+					<tr>
+						<th>Sunday</th> <td>Closed</td> 
+					</tr>
+			</table>
+			</div>
+			<div class="textBlock">
+				<div class="e" id="col">
 					<h2>
 						Why Walters?
 					</h2>
@@ -49,7 +67,7 @@
 						remaining essentially unchanged.
 					</p>
 				</div>
-				<div class="pane" id="colRight">
+				<div class="e" id="col">
 					<h2>
 						World Star
 					</h2>
@@ -63,15 +81,8 @@
 					</p>
 				</div>
 			</div>
-			<!--end of panes-->
-			<div class="pane" id="openingHours">
-				<h2>Our opening hours</h2>
-				<ul>
-					<li>
-						<strong>Monday</strong> to <strong>Friday</strong> <i>10am - 5pm</i>
-					</li>
-				</ul>
-			</div>
+			<!--end of es-->
+
 		</div>
 		<!--end of content-->
 	</body>
