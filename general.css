@@ -95,7 +95,8 @@ li s {
 	/*desktop version*/
 	.content {
 		display: block;
-
+		max-width: 800px; 
+		min-width: 680px; 
 	}
 
 	.textBlock {
