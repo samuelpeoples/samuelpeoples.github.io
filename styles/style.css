@@ -154,8 +154,8 @@ header {
   display: flex;
 }
 
-.header-img {
-  background-image: url("/img/coffee-banner2.jpg");
+header .header-img {
+  background-image: url("img/coffee-banner2.jpg");
   background-size: cover;
   background-position: 50% 70%;
   background-repeat: no-repeat;
