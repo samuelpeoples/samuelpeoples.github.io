@@ -1,22 +1,21 @@
 //* global
-*{
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+* {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 html {
 	height: 100%;
 	margin: 0px;
-	background-color: grey;
+	background-color: white;
 	body {
 		height: 100%;
 		margin: 0px;
 	}
 }
 
-@media (min-width: 800px) {
-    //! grid setup
+//* grid global
 body {
 	display: grid;
-	grid-template: auto 1fr auto / 0.3fr 1fr 0.3fr;
+	grid-template: auto 1fr auto / auto fit-content auto;
 }
 body nav {
 	grid-column: 1/4;
@@ -40,334 +39,219 @@ body footer {
 	// background-color: orange;
 	grid-column: 1/4;
 }
+
 //* navigation bar
-nav {
-	background-color: aliceblue;
+.navbar-container {
+	background-color: rgba(0, 0, 0, 0.164);
+	color: white;
+	z-index: 1;
+	top: 0px;
+	position: absolute;
+	width: 100%;
 	.navbar-content {
 		height: auto;
-		width: 50rem;
+		padding: 0rem 2rem;
 		margin: auto;
-		display: -webkit-box;
-		display: -ms-flexbox;
 		display: flex;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
 		flex-direction: row;
 		align-items: center;
 		.links {
+			padding: 0rem;
 			list-style-type: none;
-			display: -webkit-box;
-			display: -ms-flexbox;
 			display: flex;
-			-webkit-box-flex: row;
-			-ms-flex: row;
 			flex: row;
-			padding: 0rem 1rem;
+			align-items: center;
+			li {
+				padding: 0rem 0rem 0rem 2rem;
+				a {
+					transition: .2s;
+					padding: .25rem .75rem;
+					border-radius: .5rem;
+
+					background-color: rgba(255, 255, 255, 0);
+					color: white;
+				}
+			}
+			li :hover{
+				color: black;
+				background-color: rgb(255, 255, 255);
+			}
 		}
-		.social-links {
-			list-style-type: none;
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-flex: row;
-			-ms-flex: row;
-			flex: row;
-			padding: 0rem 1rem;
-		}
+
 	}
 }
 li a,
 .title a {
 	text-decoration: none;
-	color: black;
+	color: inherit;
 	text-align: right;
 	width: auto;
 	padding: 0rem 0.5rem;
 }
-	//* header
-	header {
-		min-width: 30rem;
-		height: 16rem;
-		width: 100%;
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		-ms-flex-direction: row;
-		flex-direction: row;
+.title a {
+	font-size: larger;
+	font-weight: lighter;
+}
+//* header
+header {
+	transition: 0.2s;
+	min-width: 30rem;
+	height: 30rem;
+	width: 100%;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
 
-		text-align: center;
-		font-size: 2rem;
-		color: gold;
+	text-align: center;
+	font-size: 2rem;
+	color: gold;
 
-		align-items: center;
-		justify-content: center;
-		display: flex;
-		background-color: rgba(75, 75, 75, 0.1);
-	}
+	align-items: center;
+	justify-content: center;
+	display: flex;
 	.header-img {
-		background-image: url("/img/trump-banner-2.jpg");
+		background-image: url("/img/coffee-banner2.jpg");
 		background-size: cover;
-		background-position: 50% 24%;
+		background-position: 50% 70%;
 		background-repeat: no-repeat;
-
 		height: inherit;
 		width: inherit;
-		position: absolute;
-		filter: grayscale(75%);
-	}
-	.sponser {
-		background-color: rgba(32, 32, 32, 0.5);
-		backdrop-filter: blur(0.3rem);
-		border: gold 2px solid;
-		border-radius: 1rem;
-		padding: 0.5rem 0.75rem;
-		position: absolute;
-	}
-	.divider {
-		margin-left: auto;
-	}
-
-	//* main
-	main {
-		max-width: 100rem;
-		min-width: 25rem;
-
-	}
-	.content-container{
-		margin: auto auto;
-		padding: 1rem; 
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		min-width: 10rem;
-		max-width: 40rem;
-
-	}
-	.container-heading{
-		font-size: 2rem;
-		margin: 0rem 1rem;
-	}
-	.content{
-		display: flex;
-		flex-direction: row;
-		width: fit-content;
-	}
-	.sectionText{
-		margin: auto 1rem; 
-		display: inline-block;
-		max-width: 26rem;
-		min-width: 14rem;
-	}
-	.gallery{
-		margin: auto 1rem; 
-		display: grid;
-		grid-gap: 1.2rem;
-	}
-	.gallery--4{
-		grid-template-columns: repeat(2, 8rem);
-		grid-template-rows: repeat(2, 8rem);
-	}
-	.grid-image{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		overflow: hidden;
-	}
-	.grid-image--1{
-		object-position: 92% 70%;
-
-	}
-	.grid-image--2{
-		object-position: 50% 50%;
-	}
-	.grid-image--3{
-		object-position: 30% 100%;
-	}
-	.gallery-item{
-		padding: 0px;
-		margin: 0px;
-
-	}
-	.gallery-item--1{
-		grid-column: 1/2;
-		grid-row: 1/2;
-	}
-	.gallery-item--2{
-		grid-column: 2/3;
-		grid-row: 1/2;
-	}
-	.gallery-item--3{
-		grid-column: 1/3;
-		grid-row: 2/2;
-
-	}
-	hr{
-		border: .1px solid; 
-		border-image: linear-gradient(90deg,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.733), 
-		rgba(0, 0, 0, 0));
-		border-image-slice: 1;
-		margin: 1rem 0rem;
-	}
-	//* sidebar
-	aside {
-		z-index: 1;
-		background-color: rgb(90, 90, 90);
-		padding: 2rem;
-	}
-	aside.leftBar{
-		text-align: center;
-		ul{
-			margin: 0px;
-			padding: 0px;
-			text-decoration: none;
-			list-style: none;
-			li{
-				margin: 0rem auto 2rem auto;
-			}
-		}
-	}
-
-	aside.rightBar {
-		text-align: right;
-	}
-	footer {
-		height: 5rem;
-		background-color: rgb(39, 39, 39);
 	}
 }
-// @media (max-width: 800px) {
-//     //! grid setup
-// body {
-// 	display: grid;
-// 	grid-template: auto 1fr auto / 0 1fr 0;//change in js if sidebars used
-// }
-// body nav {
-// 	grid-column: 1/4;
-// }
-// body header {
-// 	grid-column: 1/4;
-// }
-// body aside.rightBar {
-// 	grid-column: 3/4;
-// 	background-color: yellow;
-//     overflow: hidden;
-// }
-// body main {
-// 	background-color: grey;
-// 	grid-column: 2/3;
-// }
-// body aside.leftBar {
-// 	grid-column: 1/2;
-//     background-color: red;
-//     overflow: hidden;
-// }
-// body footer {
-// 	background-color: orange;
-// 	grid-column: 1/4;
-// }
-// //* navigation bar
-// nav {
-// 	background-color: aliceblue;
-// 	.navbar-content {
-// 		height: auto;
-// 		width: 30rem;
-// 		margin: auto;
-// 		display: -webkit-box;
-// 		display: -ms-flexbox;
-// 		display: flex;
-// 		-webkit-box-orient: horizontal;
-// 		-webkit-box-direction: normal;
-// 		-ms-flex-direction: row;
-// 		flex-direction: row;
-// 		align-items: center;
-// 		.links {
-// 			list-style-type: none;
-// 			display: -webkit-box;
-// 			display: -ms-flexbox;
-// 			display: flex;
-// 			-webkit-box-flex: row;
-// 			-ms-flex: row;
-// 			flex: row;
-// 			padding: 0rem 1rem;
-// 		}
-// 		.social-links {
-// 			list-style-type: none;
-// 			display: -webkit-box;
-// 			display: -ms-flexbox;
-// 			display: flex;
-// 			-webkit-box-flex: row;
-// 			-ms-flex: row;
-// 			flex: row;
-// 			padding: 0rem 1rem;
-// 		}
-// 	}
-// }
-// li a,
-// .title a {
-// 	text-decoration: none;
-// 	color: black;
-// 	text-align: right;
-// 	width: auto;
-// 	padding: 0rem 0.5rem;
-// }
-// 	//* header
-// 	header {
-// 		height: 8rem;
-// 		width: 100%;
-// 		-webkit-box-orient: horizontal;
-// 		-webkit-box-direction: normal;
-// 		-ms-flex-direction: row;
-// 		flex-direction: row;
+.sponser {
+	background-color: rgba(32, 32, 32, 0.5);
+	backdrop-filter: blur(0.3rem);
+	border: gold 2px solid;
+	border-radius: 1rem;
+	padding: 0.5rem 0.75rem;
+	position: absolute;
+}
+.divider {
+	margin-left: auto;
+}
 
-// 		text-align: center;
-// 		font-size: 2rem;
-// 		color: gold;
+//* main
+main {
+	max-width: 100rem;
+	.content-container {
+		margin: auto auto;
+		padding: 2rem 0rem;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		width: 40rem;
+		.container-heading {
+			font-size: 2rem;
+			margin: 0rem 1rem;
+		}
+		.sectionText {
+			margin: auto 1rem;
+			display: inline-block;
+			max-width: 26rem;
+			min-width: 14rem;
+		}
+	}
+}
+.gallery {
+	margin: auto 1rem;
+	display: grid;
+	grid-gap: 1.2rem;
+}
+.gallery--1 {
+	grid-template-columns: repeat(2, 8rem);
+}
+.gallery--4 {
+	grid-template-columns: repeat(2, 8rem);
+	grid-template-rows: repeat(2, 8rem);
+}
+.grid-image {
+	border-radius: 0.2rem;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	overflow: hidden;
+}
+.grid-image--1 {
+	object-position: 92% 70%;
+}
+.grid-image--2 {
+	object-position: 50% 50%;
+}
+.grid-image--3 {
+	object-position: 30% 100%;
+}
+.gallery-item {
+	padding: 0px;
+	margin: 0px;
+}
+.gallery-item--1 {
+	grid-column: 1/2;
+	grid-row: 1/2;
+}
+.gallery-item--2 {
+	grid-column: 2/3;
+	grid-row: 1/2;
+}
+.gallery-item--3 {
+	grid-column: 1/3;
+	grid-row: 2/2;
+}
+hr {
+	border: 0.1px solid;
+	margin: 0rem 2rem;
+	border-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.733), rgba(0, 0, 0, 0));
+	border-image-slice: 1;
+}
 
-// 		align-items: center;
-// 		justify-content: center;
-// 		display: flex;
-// 		background-color: rgba(75, 75, 75, 0.1);
-// 	}
-// 	.header-img {
-// 		background-image: url("/img/trump-banner-2.jpg");
-// 		background-size: 300%;
-// 		background-position: 50% 24%;
-// 		background-repeat: no-repeat;
+//* sidebar
+aside {
+	z-index: 1;
+	padding: 2rem;
+	text-align: center;
+	width: 12rem;
+	color: black;
+}
+aside.leftBar {
+	margin-left: auto;
+	ul {
+		top: 10%;
+		position: sticky;
+		padding: 0px;
+		text-decoration: none;
+		list-style: none;
+		li {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin: 0.8rem auto;
+		}
+	}
+}
+aside.rightBar {
+	margin-right: auto;
+}
+footer {
+	background-color: rgb(39, 39, 39);
+	color: white;
+	text-align: right;
+	padding: 0rem 2rem;
+	align-content: center;
+}
 
-// 		height: inherit;
-// 		width: inherit;
-// 		position: absolute;
-// 		filter: grayscale(75%);
-// 	}
-// 	.sponser {
-// 		background-color: rgba(32, 32, 32, 0.5);
-// 		backdrop-filter: blur(0.3rem);
-// 		border: gold 2px solid;
-// 		border-radius: 1rem;
-// 		padding: 0.5rem 0.75rem;
-// 		position: absolute;
-// 	}
-// 	.divider {
-// 		margin-left: auto;
-// 	}
-
-// 	//* main
-// 	main {
-// 		border: 1px black solid;
-// 		max-width: 80rem;
-// 		min-width: 8rem;
-// 	}
-
-// 	//* sidebar
-// 	aside {
-// 		padding: 4rem;
-// 	}
-// 	aside.leftBar {
-// 	}
-// 	aside.rightBar {
-// 		text-align: right;
-// 	}
-// 	footer {
-// 		height: 5rem;
-// 	}
-// }
+@media (max-width: 1199px) {
+	header {
+		height: 20rem;
+		.header-img {
+			background-position: 50% 65%;
+		}
+	}
+	body main {
+		// background-color: grey;
+		grid-column: 2/3;
+	}
+	aside {
+		width: 0rem;
+		overflow: hidden;
+		padding: 0rem;
+	}
+}
