@@ -154,8 +154,8 @@ header {
   display: flex;
 }
 
-header .header-img {
-  background-image: url("img/coffee-banner2.jpg");
+.header-img {
+
   background-size: cover;
   background-position: 50% 70%;
   background-repeat: no-repeat;
@@ -334,7 +334,7 @@ footer {
   header {
     height: 20rem;
   }
-  header .header-img {
+  .header-img {
     background-position: 50% 65%;
   }
   body main {
