@@ -217,14 +217,13 @@ main .content-container .sectionText {
 }
 
 .gallery--1 {
-  -ms-grid-columns: (8rem)[2];
       grid-template-columns: repeat(2, 8rem);
 }
 
 .gallery--4 {
-  -ms-grid-columns: (8rem)[2];
+
       grid-template-columns: repeat(2, 8rem);
-  -ms-grid-rows: (8rem)[2];
+
       grid-template-rows: repeat(2, 8rem);
 }
 
